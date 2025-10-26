@@ -140,22 +140,3 @@ if __name__ == '__main__':
         print('❌ ERROR: Configura DISCORD_TOKEN y DISCORD_CHANNEL_ID')
         exit(1)
     bot.run(CONFIG['TOKEN'])
-```
-
----
-
-## 📦 **Archivo 2: requirements.txt**
-```
-discord.py==2.3.2
-aiohttp==3.9.1
-```
-
----
-
-## 📦 **Archivo 3: .gitignore**
-```
-__pycache__/
-*.pyc
-.env
-*.log
-venv/
