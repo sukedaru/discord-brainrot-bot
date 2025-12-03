@@ -12,8 +12,8 @@ CONFIG = {
     'TOKEN': os.getenv('DISCORD_TOKEN'),
     'CHANNEL_ID': int(os.getenv('DISCORD_CHANNEL_ID')) if os.getenv('DISCORD_CHANNEL_ID') else None,
     'PLACE_ID': '109983668079237',
-    'SCAN_INTERVAL': 20,
-    'MAX_PING': 70,
+    'SCAN_INTERVAL': 15,
+    'MAX_PING': 50,
     'ONLY_NEW_SERVERS': True,
 }
 
