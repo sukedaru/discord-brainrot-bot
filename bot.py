@@ -13,7 +13,7 @@ CONFIG = {
     'CHANNEL_ID': int(os.getenv('DISCORD_CHANNEL_ID')) if os.getenv('DISCORD_CHANNEL_ID') else None,
     'PLACE_ID': '109983668079237',
     'SCAN_INTERVAL': 15,
-    'MAX_PING': 100,
+    'MAX_PING': 150,
     'ONLY_NEW_SERVERS': True,
 }
 
@@ -91,7 +91,7 @@ async def scan_servers():
                     
                     # Enviar notificación inmediatamente
                     await send_notification(server)
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0.5)
                 
                 print(f'✅ Nuevos: {new_servers_found} | ❌ Filtrados (ping>{CONFIG["MAX_PING"]}ms): {filtered_by_ping}')
                 
